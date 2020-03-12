@@ -23,6 +23,10 @@ public class Light {
 		System.out.println("Returning from constructor no.3");
 	}
 	
+
+	
+
+	
 	
 
 }

@@ -12,6 +12,10 @@ public class AppleTest {
 		
 		methodObject().color = "Brown";
 		
+		methodObject().mA();
+		
+	
+		
 	}
 	
 	public static void changeApple(Apple b1) {

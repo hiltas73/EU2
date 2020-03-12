@@ -9,6 +9,11 @@ public class LightTest {
 		System.out.println("Creating Light object no.1");
 		Light l1 = new Light();
 		
+		
+		
+		
+	
+		
 
 	}
 

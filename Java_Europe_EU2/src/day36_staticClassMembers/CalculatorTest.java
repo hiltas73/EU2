@@ -21,10 +21,19 @@ public class CalculatorTest {
 		
 		m1();
 		
+	
+
+		
 	}
 	
 	public static void m1() {
 		System.out.println("hello");
 	}
+	
+	public static void m2() {
+		System.out.println("java");
+	}
+	
+	
 
 }

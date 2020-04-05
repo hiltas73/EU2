@@ -24,7 +24,7 @@ public class ForLoop {
 //			System.out.println("i = " + i);
 //		}
 	
-		for(int i=50;i>=0;i-=5) {
+		for(int i=50;i>=0;i-=4) {
 			System.out.println("i = " + i);
 		}
 

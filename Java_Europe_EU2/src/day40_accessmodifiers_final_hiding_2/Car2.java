@@ -8,6 +8,7 @@ public class Car2 extends Car {
 		
 		//model = "M3";
 		year = 2017;
+		year=2018;
 		//door = 4;
 		engine = 5.3;
 	}

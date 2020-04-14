@@ -1,5 +1,8 @@
 package day43_polymorphism;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShapesArray {
 
 	public static void main(String[] args) {
@@ -18,6 +21,13 @@ public class ShapesArray {
 			System.out.println(sh.getClass().getSimpleName());
 			//sh.draw();
 		}
+		
+		List<Shape> shapeList = new ArrayList<>(); //poly
+		
+		
+		shapeList.add(new Triangle());
+		shapeList.add(new Circle());
+		
 		
 		
 		

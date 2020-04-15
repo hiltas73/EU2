@@ -14,6 +14,8 @@ public class ShapeTest {
 		triangle.draw();
 		
 		((Square)square).squareMethod();
+		
+		//Downcasting: cast reference type to object type
 	}
 
 }

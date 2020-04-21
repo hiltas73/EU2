@@ -7,6 +7,7 @@ public class TryCatch {
 		
 		try {
 			
+			
 			String str = "JAVA";
 			System.out.println(str.charAt(0));
 			System.out.println(str.charAt(2));  //GETTING data from 3rd party
@@ -17,6 +18,7 @@ public class TryCatch {
 			
 			System.out.println("Exception happened in try block and was cought");
 			//EXCEL
+		
 
 		}
 		

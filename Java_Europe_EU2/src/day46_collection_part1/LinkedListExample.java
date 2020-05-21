@@ -21,6 +21,7 @@ public class LinkedListExample {
 		((LinkedList<Integer>) list).addFirst(1);
 		((LinkedList<Integer>) list).addLast(99);
 		
+		
 	}
 
 }

@@ -10,7 +10,7 @@ public class ArraysAsList {
 		
 		ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(10, 40, 12, 5, 7));
         System.out.println("nums = " + nums);
-       // nums.remove(0);
+       // nums.remove(0);++--
        // nums.add(2);
         System.out.println("nums = " + nums);
 

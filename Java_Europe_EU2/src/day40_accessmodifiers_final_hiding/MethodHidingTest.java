@@ -2,13 +2,10 @@ package day40_accessmodifiers_final_hiding;
 
 public class MethodHidingTest {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 
 	}
-
 }
-
 
 class Bear{
 	
@@ -34,8 +31,7 @@ class Panda extends Bear{
 	public  void sneeze() {
 		System.out.println("Panda is sneezing");
 	}
-	*/
-	
+	*/	
 	
 	@Override
 	public void hibernate() {

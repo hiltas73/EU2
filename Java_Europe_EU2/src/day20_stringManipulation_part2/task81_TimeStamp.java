@@ -5,17 +5,13 @@ public class task81_TimeStamp {
 	public static void main(String[] args) {
 		
 
-		String time = "10/01/2019 15:42:00";
+		double dNum = 9/2;
+		int iNum = 9/2;
+		int mNum = 9%2;
 		
-		System.out.println(timeStamp(time));
-
-	}
-	
-	public static String timeStamp(String time) {
+		System.out.println(dNum + iNum + mNum);
 		
-		time = time.replace("/", "").replace(":", "").replace(" ", "");
-		
-		return time;
+		System.out.println(dNum);
 		
 	}
 

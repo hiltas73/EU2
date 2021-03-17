@@ -12,7 +12,6 @@ public class CarTest {
 		Car c3 = new Car("BMW", "320", 2017, 30000, "red");
 		
 		
-		
 		System.out.println(c1.make);
 		System.out.println(c2.make);
 		

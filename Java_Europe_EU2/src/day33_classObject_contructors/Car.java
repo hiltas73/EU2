@@ -8,7 +8,7 @@ public class Car {
 	double mile;
 	String color;
 	
-	//create constrcutor
+	//create constructor
 	public Car() {
 		
 		model = "Honda";

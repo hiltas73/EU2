@@ -1,22 +1,20 @@
 package day40_accessmodifiers_final_hiding;
 
-public class KangarooTest {
+public class PetTest {
 
 	public static void main(String[] args) {
 		
-			Kangaroo k = new Kangaroo();
-			k.getMarsupialDescription();			
-//			k.getKangarooDescription();
-//			k.getDescription();
-			
-			System.out.println("========================");
-						
-//			Marsupial marsupial = new Marsupial();
-//			marsupial.getMarsupialDescription();
-			
-			
-			
+		Bird bird = new Bird();
+		bird.getPetDescription();
+		bird.getBirdDescription();
+		
+		System.out.println("==============================");
+		
+//		Pet pet = new Pet();
+//		pet.getPetDescription();
+		
 	}
+	
 	/***
 	The method defined in the child class must be marked as static if it is
 	marked as static in the parent class (METHOD HIDING). 

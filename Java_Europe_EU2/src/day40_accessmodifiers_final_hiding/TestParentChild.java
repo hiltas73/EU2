@@ -4,21 +4,21 @@ public class TestParentChild {
 
 	public static void main(String[] args) {
 		
-		Child s = new Child();
-		System.out.println("Value of x before increemnt " + s.x);
+		GrandChild gChild = new GrandChild();
+		gChild.instanceMethod();
+		gChild.staticMethod();
 		
-		s.increment();
+		System.out.println("=============================");
 		
-		System.out.println("Vlue of x after increement " + s.x);
+		Child child = gChild;	//overriding instance method
+		child.instanceMethod();
+		child.staticMethod();
 		
-		Parent p = new Parent();
+		System.out.println("=============================");
 		
-		System.out.println("Value of x before increemnt " + p.x);
+		Parent parent = gChild;
+		parent.instanceMethod(); //overriding instance method
+		parent.staticMethod();
 		
-		p.increment();
-		
-		System.out.println("Value of x after increemnt " + p.x);
-
 	}
-
 }

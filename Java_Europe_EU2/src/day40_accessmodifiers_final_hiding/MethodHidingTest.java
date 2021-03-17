@@ -4,6 +4,18 @@ public class MethodHidingTest {
 
 	public static void main(String[] args) {		
 
+		Bear bear = new Bear();
+		bear.eat();
+		bear.hibernate();
+		bear.sneeze();
+		
+		System.out.println("==========================");
+		
+		Panda panda = new Panda();
+		panda.eat();
+		panda.hibernate();
+		panda.sneeze();
+		
 	}
 }
 
@@ -28,7 +40,7 @@ class Panda extends Bear{
 	}
 	
 	/*
-	public  void sneeze() {
+	public void sneeze() {
 		System.out.println("Panda is sneezing");
 	}
 	*/	
@@ -37,7 +49,19 @@ class Panda extends Bear{
 	public void hibernate() {
 		System.out.println("Panda is hibernating");
 	}
+	/***
+	The method defined in the child class must be marked as static if it is
+	marked as static in the parent class (METHOD HIDING). 
+	Likewise, the method must not be marked as static in the child class if it is not
+	marked as static in the parent class (METHOD OVERRIDING)
+	 */
 	
+	/**
+	 * Overriding occurs only with instance methods.
+	 * On the other hand, method hiding works with static ones
+	 *
+	 */
+
 }
 
 

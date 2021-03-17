@@ -2,10 +2,12 @@ package day40_accessmodifiers_final_hiding;
 
 public class Parent {
 	
-	public int x = 100;
 	
-	public void increment() {
-		x++;
+	public void instanceMethod() {
+		System.out.println("instance method in Parent class");		
 	}
 
+	public static void staticMethod() {
+		System.out.println("static method in Parent class");
+	}
 }

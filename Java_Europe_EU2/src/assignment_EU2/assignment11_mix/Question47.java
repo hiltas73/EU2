@@ -6,7 +6,7 @@ public class Question47 {
 
 	public static void main(String[] args) {
 		
-		int[] inhabitants = {3,6,0,4,3,2,7,1};
+		int[] inhabitants = {3,6,0,4,3,2,7,0};
 		
 		int day=0;
 
@@ -15,9 +15,9 @@ public class Question47 {
 	  		// it is printing everyday report
 	  		System.out.println("Day " + day + " " + Arrays.toString(inhabitants));
 
-	  		// the report should be stop when all element in Array is 0;
+	  		// the report should be stopped when all element in Array is 0;
 	  		// if sum of all element is 0 it means , all people is dead because of zombie
-	  		// so if sum is 0 ,it should break outer for loop and stop
+	  		// so if sum is 0, it should break outer for loop and stop
 	  		if (sum(inhabitants) == 0) {
 	  			break label;
 	  		}

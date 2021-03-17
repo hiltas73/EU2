@@ -1,29 +1,54 @@
 package assignment_EU2.assignment13_mix;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
+
 
 public class Question74 {
 
 	  public static void main(String[] args){
 		  
-		  ArrayList<Integer>  arr = new ArrayList<>();
-		  Integer[] nums = new Integer[]{3,4,3,3};
-		  arr.addAll(Arrays.asList(nums));
+		  int[] inhabitants = {3,6,0,4,3,2,7,0};
+		  zombieAttack(inhabitants);		  
 		  
-		  System.out.print(removeInst(arr,4));
 	  }
 	  
-	  public static ArrayList<Integer> removeInst(ArrayList<Integer> r,Integer n){
-		    
-		    for (int i=r.size()-1;i>=0;i--){
-		    	if (r.get(i)==n) {
-		    		r.remove(i);
-				}
-		     }
-		    
-		    return r;
-		    
+	  public static int sum(int[] arr) {		  	
+			int sum = 0;
+		  	for (int i = 0; i < arr.length; i++) {
+		  		sum = sum + arr[i];
+		  	}		  	
+		  	return sum;		  	
+		}
+	  
+	  public static void zombieAttack(int[] arr) {
+		  int day = 0;
+		  
+		  label:
+		  for(int d=0; d<arr.length; d++) {
+			  System.out.println("Day " + day + Arrays.toString(arr));
+			  
+			  if(sum(arr) == 0){
+				  System.out.println("------- EXTINCT -------");
+				  break label;				  
+			  }
+			  if(arr[d]==0) {
+				  arr[d+1] = arr[d+1] / 2;
+			  }
+			  if(arr[arr.length-1]==0) {
+				  arr[arr.length-2] = arr[arr.length-2] / 2;
+			  }
+				  
+			  for(int k = d+1; k<arr.length-2; k++) {					  
+				  if(arr[k] == 0) {						  
+					arr[k-1] = arr[k-1]/2;
+					arr[k+1] = arr[k+1]/2;
+					}
+			  
+			  
+			  }
+			  
+		  }
+		  day++;
 	  }
 
 }

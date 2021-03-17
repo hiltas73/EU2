@@ -6,4 +6,5 @@ public class Question1 {
 		System.out.println("I am ready to be a Java pro :)");
 	}
 
+	
 }

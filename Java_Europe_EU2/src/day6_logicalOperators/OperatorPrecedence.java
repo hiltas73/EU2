@@ -48,22 +48,6 @@ public class OperatorPrecedence {
 		System.out.println(x);   
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	}
 
